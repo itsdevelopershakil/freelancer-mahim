@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-inter: var(--font-inter);
+  --font-bricolage: var(--font-bricolage-grotesque);
+}
+
+* {
+  font-family: var(--font-inter), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-bricolage), sans-serif;
+}
