@@ -1,16 +1,21 @@
 "use client";
 
-import { useState } from "react";
+import { PortfolioCategory, portfolioData } from "@/constants/portfolioData";
+import { Fragment, useState } from "react";
+import PortfolioCard from "./PortfolioCard";
 
 const Portfolio = () => {
-  const [selectedService, setSelectedService] = useState("facebook_ads");
-  const services = [
+  const [selectedService, setSelectedService] =
+    useState<PortfolioCategory>("facebook_ads");
+  const services: { label: string; value: PortfolioCategory }[] = [
     { label: "Facebook Ads", value: "facebook_ads" },
     { label: "Youtube SEO", value: "youtube_seo" },
     { label: "Google Ads", value: "google_ads" },
     { label: "Thumbnail Design", value: "thumbnail_design" },
     { label: "Canva Design", value: "canva_design" },
   ];
+
+  const items = selectedService ? portfolioData[selectedService] : [];
   return (
     <>
       <div className="flex justify-center">
@@ -31,6 +36,13 @@ const Portfolio = () => {
             </li>
           ))}
         </ul>
+      </div>
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 mt-10 gap-5 xl:gap-10">
+        {items.map((item, i) => (
+          <Fragment key={i}>
+            <PortfolioCard data={item} />
+          </Fragment>
+        ))}
       </div>
     </>
   );
