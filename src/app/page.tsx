@@ -1,10 +1,24 @@
 import Gallery from "@/components/Gallery";
 import Footer from "@/components/partials/Footer";
+import Portfolio from "@/components/Portfolio";
 import TestimonialCard from "@/components/TestimonialCard";
 
 export default function Home() {
   return (
     <>
+      <section className="py-20 bg-[#101015]">
+        <div className="max-width">
+          <h1 className="text-white font-semibold text-5xl leading-[64px] text-center">
+            My Recent Projects
+          </h1>
+          <p className="text-[#B7B7B5] text-lg leading-7 mt-5 mb-10 text-center">
+            I am continually eager to take on new challenges, collaborating with{" "}
+            <br />
+            individuals and companies to bring their product ideas to life.
+          </p>
+          <Portfolio />
+        </div>
+      </section>
       <section className="py-[100px]">
         <div className="max-width">
           <h1 className="font-semibold text-2xl sm:text-3xl lg:text-[48px] leading-[64px]">
