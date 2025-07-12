@@ -14,7 +14,7 @@ const Portfolio = () => {
   return (
     <>
       <div className="flex justify-center">
-        <ul className="flex items-center rounded-[35px] border border-[#B7B7B5] gap-2.5 p-2.5 w-auto">
+        <ul className="flex flex-wrap md:flex-nowrap justify-center items-center rounded-[35px] border border-[#B7B7B5] gap-2.5 p-2.5 w-auto">
           {services.map((service, index) => (
             <li key={index}>
               <button
@@ -24,7 +24,7 @@ const Portfolio = () => {
                   service.value === selectedService
                     ? "bg-[#F8F9FA] text-[#1D1D1D]"
                     : "text-[#B7B7B5]"
-                } px-5 py-2.5 rounded-[25px] hover:text-[#1D1D1D] duration-300 cursor-pointer`}
+                } px-4 lg:px-5 py-2 lg:py-2.5 text-sm lg:text-base rounded-[25px] hover:text-[#1D1D1D] duration-300 cursor-pointer`}
               >
                 {service.label}
               </button>
