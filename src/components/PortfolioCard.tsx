@@ -34,7 +34,7 @@ const PortfolioCard = ({ data }: PortfolioCardProps) => {
           className="pl-5 pr-4 py-2.5 flex items-center gap-2.5 bg-[#1E1E1E] border border-[#B7B7B5] text-[#B7B7B5] hover:bg-white hover:text-[#101015] duration-300 group rounded-[30px] font-medium text-sm xl:text-base"
         >
           View Case Study{" "}
-          <TbBrandWhatsappFilled className="text-2xl text-white group-hover:text-[#101015] duration-300" />
+          <TbBrandWhatsappFilled className="text-2xl text-white group-hover:text-[#101015] duration-300 shrink-0" />
         </Link>
       </div>
     </div>
