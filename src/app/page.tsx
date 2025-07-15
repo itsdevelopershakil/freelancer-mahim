@@ -1,13 +1,15 @@
 import Expertise from "@/components/Expertise";
 import Gallery from "@/components/Gallery";
 import Footer from "@/components/partials/Footer";
+import Header from "@/components/partials/Header";
 import Portfolio from "@/components/Portfolio";
 import TestimonialCard from "@/components/TestimonialCard";
 
 export default function Home() {
   return (
     <>
-      <section className="py-20 sm:py-[100px]">
+      <Header />
+      <section className="py-20 sm:py-[100px]" id="pricing">
         <div className="max-width">
           <h1 className="font-semibold text-2xl sm:text-3xl lg:text-5xl leading-[64px] text-center">
             Expertise
@@ -21,7 +23,7 @@ export default function Home() {
           <Expertise />
         </div>
       </section>
-      <section className="py-20 bg-[#101015]">
+      <section className="py-20 bg-[#101015]" id="portfolio">
         <div className="max-width">
           <h1 className="text-white font-semibold text-2xl sm:text-3xl lg:text-5xl leading-[64px] text-center">
             My Recent Projects

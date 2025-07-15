@@ -18,6 +18,10 @@ h6 {
   font-family: var(--font-bricolage), sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 .max-width {
   width: 100%;
   max-width: 1280px;

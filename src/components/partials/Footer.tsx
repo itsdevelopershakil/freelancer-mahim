@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="bg-[#101015] py-20">
+    <div className="bg-[#101015] py-20" id="contact">
       <div className="max-width text-center relative">
         <Image
           src={VectorImg}
