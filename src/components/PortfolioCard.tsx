@@ -18,6 +18,7 @@ const PortfolioCard = ({ data }: PortfolioCardProps) => {
         src={data.image.portFolioImage}
         alt="Portfolio Image"
         className="w-full h-[220px] sm:h-[200px] xl:h-[270px] object-cover rounded-lg"
+        style={{ width: "100%", height: "auto" }} // Maintain aspect ratio
       />
       <h1
         className="font-semibold text-lg xl:text-[26px] line-clamp-1 text-white mt-[15px] mb-2.5"

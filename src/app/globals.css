@@ -2,7 +2,7 @@
 
 @theme inline {
   --font-inter: var(--font-inter);
-  --font-bricolage: var(--font-bricolage-grotesque);
+  --font-bricolage: var(--font-bricolage);
 }
 
 * {
