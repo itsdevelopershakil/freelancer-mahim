@@ -3,7 +3,9 @@ import Gallery from "@/components/Gallery";
 import Footer from "@/components/partials/Footer";
 import Header from "@/components/partials/Header";
 import Portfolio from "@/components/Portfolio";
+import ServiceCard from "@/components/ServiceCard";
 import TestimonialCard from "@/components/TestimonialCard";
+import { servicesData } from "@/constants/servicesData";
 import Link from "next/link";
 
 export default function Home() {
@@ -109,7 +111,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="w-1/2">
-              {/* {servicesData.map(({ desc, id, name, tags }) => (
+              {servicesData.map(({ desc, id, name, tags }) => (
                 <ServiceCard
                   desc={desc}
                   id={id}
@@ -117,7 +119,7 @@ export default function Home() {
                   tags={tags}
                   key={id}
                 />
-              ))} */}
+              ))}
             </div>
           </div>
         </div>
