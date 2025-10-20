@@ -1,0 +1,57 @@
+export const servicesData = [
+  {
+    id: 1,
+    name: "FinTech & Banking",
+    desc: `In the fast-paced and ever-changing world of financial technology, I specialize in crafting user-centric designs that enable effortless management of personal finances. My expertise ranges from developing intuitive banking apps to creating secure payment platforms, all designed to bolster user trust, convenience, and financial wellness.`,
+    tags: [
+      "Bookkeeping app",
+      "Mobile Payments",
+      "Fintech services",
+      "KYC Process",
+      "SaaS",
+      "Digital Banking",
+      "Insurance App",
+      "Mobile Banking",
+      "Insurance App",
+      "Digital wallet",
+    ],
+  },
+  {
+    id: 2,
+    name: "Healthcare",
+    desc: `In the healthcare sector, I specialize in designing digital solutions that prioritize user health and well-being. My designs are aimed at streamlining healthcare access, enhancing patient engagement, and ensuring the utmost data security and compliance.`,
+    tags: [
+      "Remote Patient Monitoring",
+      "Healthcare Analytics",
+      "Health App",
+      "Healthcare Mobile Apps",
+      "SaaS",
+      "Healthcare Landing Page",
+    ],
+  },
+  {
+    id: 3,
+    name: "E-commerce",
+    desc: `The key to a successful online business lies in establishing a robust virtual presence that not only meets user expectations but also drives conversions. In this realm, I design innovative solutions for e-commerce businesses, crafting intuitive interfaces that enhance customer interaction and incorporating user-friendly navigation features to boost conversion rates.`,
+    tags: [
+      "Marketplaces",
+      "CRM",
+      "B2C",
+      "Product Websites",
+      "B2B",
+      "Vendor Portal",
+      "Sales Portal",
+      "PoS systems",
+    ],
+  },
+  {
+    id: 4,
+    name: "Real Estate",
+    desc: `The realm of real estate technology requires immersive and user-friendly designs. I develop digital experiences that simplify property searches, streamline transactions, and offer comprehensive property information. My designs significantly enhance the real estate journey for buyers, sellers, and agents.`,
+    tags: [
+      "Real Estate Apps",
+      "Crypto Real Estate Platform",
+      "Real Estate Website",
+    ],
+  },
+];

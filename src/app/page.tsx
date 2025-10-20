@@ -3,7 +3,9 @@ import Gallery from "@/components/Gallery";
 import Footer from "@/components/partials/Footer";
 import Header from "@/components/partials/Header";
 import Portfolio from "@/components/Portfolio";
+import ServiceCard from "@/components/ServiceCard";
 import TestimonialCard from "@/components/TestimonialCard";
+import { servicesData } from "@/constants/servicesData";
 import Link from "next/link";
 
 export default function Home() {
@@ -75,6 +77,49 @@ export default function Home() {
                 We use Facebook Ads, Google Ads, YouTube SEO, and social media
                 marketing to drive brand growth and boost engagement.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        className="bg-[#101015] text-white py-20 mt-[100px]"
+        id="services"
+      >
+        <div className="max-width">
+          <div className="flex items-start gap-10">
+            <div className="w-1/2">
+              <div className="flex mb-5">
+                <span className="px-5 py-2.5 border border-[#484848] bg-[#1E1E1E] rounded-[25px] !font-bricolage">
+                  WHAT I DO
+                </span>
+              </div>
+              <h1 className="font-semibold text-5xl leading-[64px]">
+                Industries
+              </h1>
+              <p className="text-[#B7B7B5] leading-[24px] mt-[15px] mb-[30px]">
+                I am passionate about designing and developing straightforward
+                and honest products that enhance people&apos;s lives, achieved
+                through teamwork. With more than five years of experience in
+                digital product design, my focus is primarily on complex
+                products and robust design systems.
+              </p>
+              <Link
+                href={"#"}
+                className="rounded-[30px] bg-white border border-[#5F5C58] hover:bg-[#5F5C58] hover:text-white duration-300 px-8 py-4 font-medium text-lg text-[#101015] inline-block"
+              >
+                Let&apos;s Talk a Project
+              </Link>
+            </div>
+            <div className="w-1/2">
+              {servicesData.map(({ desc, id, name, tags }) => (
+                <ServiceCard
+                  desc={desc}
+                  id={id}
+                  name={name}
+                  tags={tags}
+                  key={id}
+                />
+              ))}
             </div>
           </div>
         </div>
