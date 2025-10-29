@@ -1,3 +1,6 @@
+import FlowerShape from "@/assets/images/flower-shape.png";
+import HeroImg from "@/assets/images/hero.png";
+import NiceToMeetImg from "@/assets/images/nice-to-meet.png";
 import Expertise from "@/components/Expertise";
 import Gallery from "@/components/Gallery";
 import Footer from "@/components/partials/Footer";
@@ -6,12 +9,90 @@ import Portfolio from "@/components/Portfolio";
 import ServiceCard from "@/components/ServiceCard";
 import TestimonialCard from "@/components/TestimonialCard";
 import { servicesData } from "@/constants/servicesData";
+import Image from "next/image";
 import Link from "next/link";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 export default function Home() {
   return (
     <>
       <Header />
+      <section>
+        <div className="max-width">
+          <div className="grid sm:grid-cols-12 gap-10 relative">
+            <Image
+              src={FlowerShape}
+              alt="Flower Shape"
+              className="object-contain absolute bottom-[100px] lg:bottom-[85px] left-1/2 lg:left-3/5"
+            />
+            <div className="sm:col-span-7 lg:col-span-8 order-1 sm:order-none">
+              <div>
+                <h1 className="text-2xl leading-10 sm:text-3xl sm:leading-[46px] lg:text-5xl lg:leading-16 xl:text-[64px] xl:leading-[80px] font-semibold text-[#101015]">
+                  Driving Real Results with Digital Marketing
+                </h1>
+                <p className="xl:text-lg leading-[28px] text-[#454545] mt-5 mb-10 lg:mr-[85px]">
+                  I craft growth-focused strategies using Facebook Ads, Google
+                  Ads, YouTube SEO, and Social Media Marketing. I help startups
+                  and businesses make smart digital decisions — from product
+                  launch to growth — with data-backed campaigns and compelling
+                  visuals.
+                </p>
+                <div className="flex mb-20">
+                  <Link
+                    href={"tel:000000"}
+                    className="flex items-center gap-[15px] px-6 sm:px-8 py-3 sm:py-4 rounded-[30px] bg-[#101015] border border-[#101015] text-white hover:text-[#101015] hover:bg-[#F6F7FF] duration-300"
+                  >
+                    <span className="text-sm lg:text-base xl:text-lg font-semibold">
+                      Chat Real-Time on
+                    </span>
+                    <IoLogoWhatsapp className="lg:text-2xl" />
+                    <span className="text-sm lg:text-base xl:text-lg font-semibold">
+                      Whatsapp
+                    </span>
+                  </Link>
+                </div>
+                <div className="sm:w-[150%] md:w-[120%] lg:w-full flex flex-wrap sm:flex-nowrap gap-2.5 lg:gap-[30px] !font-bricolage">
+                  <p className="text-[#101015] text-lg sm:text-base lg:text-lg xl:text-2xl leading-8 w-full sm:w-auto">
+                    2+
+                    <br />
+                    years experience
+                  </p>
+                  <div className="flex h-px sm:h-[64px] bg-[rgba(69,69,69,.4)] w-[64px] sm:w-px">
+                    <span className="h-full sm:h-1/2 w-1/2 sm:w-full bg-[#454545]"></span>
+                  </div>
+                  <p className="text-[#101015] text-lg sm:text-base lg:text-lg xl:text-2xl leading-8 w-full sm:w-auto">
+                    250+
+                    <br />
+                    work reviews
+                  </p>
+                  <div className="flex h-px sm:h-[64px] bg-[rgba(69,69,69,.4)] w-[64px] sm:w-px">
+                    <span className="ml-auto sm:mt-auto h-full sm:h-1/2 w-1/2 sm:w-full bg-[#454545]"></span>
+                  </div>
+                  <p className="text-[#101015] text-lg sm:text-base lg:text-lg xl:text-2xl leading-8 w-full sm:w-auto">
+                    Performance
+                    <br />
+                    Marketing, SEO & Brand Design
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="sm:col-span-5 lg:col-span-4">
+              <div className="relative">
+                <Image
+                  src={NiceToMeetImg}
+                  alt="Nice to Meet you Image"
+                  className="object-contain absolute top-[-30px] lg:top-0 left-small left-1/5 sm:left-[-20px] lg:left-0"
+                />
+                <Image
+                  src={HeroImg}
+                  alt="Hero Image"
+                  className="object-contain mx-auto sm:mr-0"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="pt-[120px]" id="about">
         <div className="max-width">
           <div className="flex mb-5">

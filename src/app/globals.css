@@ -55,3 +55,8 @@ button {
     padding-inline: 16px;
   }
 }
+@media (max-width: 420px) {
+  .left-small {
+    left: 0 !important;
+  }
+}
